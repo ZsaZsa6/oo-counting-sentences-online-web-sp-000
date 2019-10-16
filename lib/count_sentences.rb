@@ -17,7 +17,6 @@ class String
   def count_sentences
     sentence = self.split(/\.?\s+/, 4)
     sentence.reject!{ |element| element.empty? }
-    binding.pry
     sentence.count
 
   end
