@@ -17,7 +17,7 @@ class String
   def count_sentences
     sentence = self.split(/\.?\+$/)
     binding.pry
-    # sentence.reject!{ |element| element.empty? }
+    sentence.reject!{ |element| element.empty? }
     sentence.count
 
   end
